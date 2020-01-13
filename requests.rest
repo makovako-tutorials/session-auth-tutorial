@@ -1,0 +1,41 @@
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "email": "alex2@alex.com",
+    "name": "alex",
+    "password": "secret12",
+    "passwordConfirmation": "secret12"
+}
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "email": "alex2@alex.com",
+    "name": "alex",
+    "password": "secret12"
+}
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+Cookie: sid=s%3AerjLlQSIOPsafSc0gBpvWXAcD0AVEiSb.V9BeN9fmIUobZ7C6WDi8NuiuhNkjKV%2FhPqqARDAEalk
+
+###
+POST http://localhost:3000/logout
+Cookie: sid=s%3AxZ56evl_a7wIcIMObhHPOooE0Qsm-ta9.S8NL3wF9ZYWRnAjthIzuxr8FeRizXx9Wro2AyRb%2BWAY
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "alex2@alex.com",
+    "password": "secret12"
+}
+
+###
+
+
